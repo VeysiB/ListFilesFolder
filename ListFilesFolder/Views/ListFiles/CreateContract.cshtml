@@ -1,0 +1,16 @@
+﻿@model ContractViewModel
+
+<form asp-action="CreateContract" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="ContractName">Sözleşme Adı</label>
+        <input type="text" class="form-control" id="ContractName" name="ContractName" required />
+    </div>
+
+    <div class="form-group">
+        <label for="files">Dosyalar</label>
+        <input type="file" class="form-control" id="files" name="files" multiple />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Sözleşmeyi Ekle</button>
+</form>
+

@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\Files\" />
+    <Folder Include="wwwroot\Contracts\" />
   </ItemGroup>
 
 </Project>
