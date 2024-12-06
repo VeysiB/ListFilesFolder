@@ -1,0 +1,17 @@
+﻿@model IEnumerable<FileViewModel>
+
+<div class="table-responsive">
+    <table class="table  table-bordered">
+        <tr>
+            <th>File Name</th>
+            <th></th>
+        </tr>
+        @foreach (FileViewModel file in Model)
+        {
+            <tr>
+                <td>@file.FileName</td>
+                <td><a href="/ListFiles/DownloadFile?fileName=@file.FileName">Download</a></td>
+            </tr>
+        }
+    </table>
+</div>
